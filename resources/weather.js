@@ -1,6 +1,6 @@
 const weather = document.getElementById("weather");
 const CORDS = 'Cords';
-const API_KEY = "feaa4d729c78b7e13d07df0eceeb3066";
+const API_KEY = "7745ce11b5c52667a5479fd568c3816a";
 
 function getWeather(lat, lon) {
  fetch(
