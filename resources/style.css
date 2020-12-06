@@ -1,0 +1,34 @@
+* {box-sizing:border-box; outline:none;}
+input::placeholder {color:#fff}
+input[type="text"] {height:30px; margin:0 0 10px; padding:0 10px; background:none; border:0; vertical-align:middle; line-height:30px; color:#fff; font-size:20px; appearance:none;}
+body {display:flex; justify-content:center; align-items:center; margin:0; padding:0; width:100%; height:100vh; min-height:500px; background:#666 no-repeat 50% / cover; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+body::before {content:""; display:block; z-index:-1; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.2)}
+h1 {width:100%; text-align:center; color:#fff; font-size:48px; font-weight:400;}
+.namebox {width:300px; height:40px; margin:0 auto; padding:0; border:0; border-bottom:2px solid #fff; line-height:40px;}
+.namebox::after {content:""; display:block; clear:both; overflow:hidden}
+.namebox input[type="text"] {width:85%}
+.namebox button {float:right; width:15%; margin-top:7px; padding:0; background:none; border:0; font-size:0}
+.namebox button svg {width:24px; height:24px}
+.namebox button svg path {stroke:#fff;}
+
+#clock {width:600px; text-align:center; color:#fff; font-size:80px; font-weight:600;}
+#clock span {display:inline-block; width:100px; vertical-align:middle;}
+
+.todolist {display:none;}
+.todolist::after {content:""; display:block; clear:both; overflow:hidden}
+.add-form {width:300px; height:40px; margin:0 auto; padding:0; border:0; border-bottom:2px solid #fff; line-height:40px;}
+.add-form input[type="text"] {width:85%}
+.add-form button {float:right; width:15%; margin-top:7px; padding:0; background:none; border:0; font-size:0}
+.add-form button svg {width:24px; height:24px}
+.add-form button svg path {stroke:#fff;}
+
+.pendingbox {float:left; width:50%;}
+.finishedbox {float:left; width:50%;}
+
+.todolist ul {list-style:none;}
+.todolist ul li {clear:both; position:relative; padding-left:10px; font-size:0; list-style:none;}
+.todolist ul li::before {content:""; position:absolute; top:50%; left:0; width:3px; height:3px; margin-top:-1.5px; border-radius:50%; background:#fff}
+.todolist ul li span {display:inline-block; overflow:hidden; width:80%; vertical-align:middle; color:#fff; font-size:14px; text-overflow:ellipsis; white-space:nowrap;}
+.todolist ul li button {width:10%; height:20px; padding:0; background:none; border:0; text-align:center; vertical-align:middle; line-height:10px;}
+.todolist ul li button svg {width:20px; height:20px}
+.todolist ul li button svg path {stroke:#fff;}
